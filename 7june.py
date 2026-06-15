@@ -1,9 +1,9 @@
 
 #Task1
-# a = int(input("Enter a number:"))
-# b = int(input("Enter a number:"))
-# print(a,end="")
-# print(b)
+a = int(input("Enter a number:"))
+b = int(input("Enter a number:"))
+print(a,end="")
+print(b)
 
 #Task2
 
@@ -13,14 +13,15 @@
 # print(c)
 
 
-#Task3
-a = int(input("Enter a number:"))
-b = int(input("Enter a number:"))
-c = input("Enter a any of these operator (+, -, /, %, *) : ")
-c == "+" and  print(a+b)
-c == "-" and print(a-b)
-c == "/" and print(a/b)
-c == "%" and print(a%b)
-c == "*" and print(a*b)
+
+# #Task3
+# a = int(input("Enter a number:"))
+# b = int(input("Enter a number:"))
+# c = input("Enter a any of these operator (+, -, /, %, *) : ")
+# c == "+" and  print(a+b)
+# c == "-" and print(a-b)
+# c == "/" and print(a/b)
+# c == "%" and print(a%b)
+# c == "*" and print(a*b)
 
 
