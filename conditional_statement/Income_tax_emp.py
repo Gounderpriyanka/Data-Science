@@ -38,24 +38,25 @@ TA = 900
 Professional_Tax = 300
 Gross_Pay = Basic_Pay+HRA+DA+other_Allowances+TA+Professional_Tax-EPF
 Annual_Income = Gross_Pay * 12
-print(Gross_Pay)
-print(Annual_Income)
-Tax_slab = 0
+print("Gross Pay",Gross_Pay)
+print("Annual Income",Annual_Income)
 Tax = 0
-for i in range(1,Annual_Income):
 
-    if 0 <= Tax_slab <= 250000:
-        Tax = Tax_slab*0
-    elif 250001 <= Tax_slab <= 500000:
-        Tax = Tax_slab*0.05
-    elif 500001 <= Tax_slab <=750000:
-        Tax = Tax_slab*0.10+12500
-    elif 750001 <= Tax_slab <=1000000:
-        Tax = Tax_slab*0.15+37500
-    elif 1000001 <= Tax_slab <= 1250000:
-        Tax = Tax_slab*0.20+75000
-    elif 1250001 <= Tax_slab <=1500000:
-        Tax = Tax_slab*0.25+125000
-    elif Tax_slab>=1500000:
-        Tax = Tax_slab*0.30+187500
+
+if 0 <= Annual_Income <= 250000:
+    Tax = Annual_Income*0
+elif 250000 <= Annual_Income <= 500000:
+    Tax = (Annual_Income - 250000)*0.05
+elif 500000 <= Annual_Income <=750000:
+    Tax = (Annual_Income - 500000)*0.10+12500
+elif 750000 <= Annual_Income <=1000000:
+    Tax = (Annual_Income-750000)*0.15+37500
+elif 1000000 <= Annual_Income <= 1250000:
+    Tax = (Annual_Income-1000000)*0.20+75000
+elif 1250000 <= Annual_Income <=1500000:
+    Tax = (Annual_Income-1250000)*0.25+125000
+elif Annual_Income>=1500000:
+    Tax = (Annual_Income-1500000)*0.30+187500
+
+print("Income Tax:",Tax)
 
