@@ -34,8 +34,8 @@
 #         if i == reverse:
 #             print(i,end=" ")
 
-num = int(input("Enter the value:"))
-while num>0:
+# num = int(input("Enter the value:"))
+# while num>0:
 
 
 

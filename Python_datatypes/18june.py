@@ -10,3 +10,21 @@
 # print("The second Largest number is :",second_largest)
 
 #Task 2
+total =int(input("Enter the Total number:"))
+l1 = []
+l2 = []
+for i in range (total):
+    num = int(input("Enter the number:"))
+    l1.append(num)
+
+for i in l1:
+    c = 0
+    for j in range(1,i+1):
+        if i%j==0:
+            c = c+1
+    if c == 2:
+        l2.append(i)
+
+print(l1)
+print(l2)
+    
