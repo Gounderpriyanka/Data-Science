@@ -29,21 +29,23 @@
 # print(l2)
     
 # Task3
-total =int(input("Enter the Total number:"))
-l1 = []
-l2 = []
-for i in range (total):
-    num = int(input("Enter the number:"))
-    l1.append(num)
+# total =int(input("Enter the Total number:"))
+# l1 = []
+# l2 = []
+# for i in range (total):
+#     num = int(input("Enter the number:"))
+#     l1.append(num)
 
-for i in range (num+1):
-    reverse = 0 
-    for j in l1:
-        temp = j   
-        r = i%10
-        reverse = reverse+r*10
-    if reverse == temp :
-        l2.append(j)
+# for i in l1:
+#     temp = i
+#     reverse = 0
+#     for j in range(len(str(i))):
+#         r = temp%10
+#         reverse = (reverse*10)+r
+#         temp = temp//10
+#     if reverse == i:
+#         l2.append(i)
+# print(l1)
+# print(l2)
 
-print(l1)
-print(l2)       
+#Task4
