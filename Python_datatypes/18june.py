@@ -49,3 +49,19 @@
 # print(l2)
 
 #Task4
+Total = int(input("Enter the Total number:"))
+l1 = []
+result = []
+for i in range(Total):
+    num = int(input("Enter the number:"))
+    l1.append(num)
+for i in l1:
+    reverse = 0
+    temp = i
+    for j in range(len(str(i))):
+        r = temp%10
+        reverse = (reverse*10)+r
+        temp = temp // 10
+    result.append(reverse)
+print(l1)
+print(result)

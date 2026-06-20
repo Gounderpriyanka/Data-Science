@@ -46,6 +46,8 @@
 # l1 = []
 # l2 = []
 
+
+#prime number
 # for i in range(num):
 #     s = int(input("Enter the number:"))
 #     l1.append(s)
