@@ -6,43 +6,33 @@
 #     d1[name] = marks
 # print(d1)
 
-# Task1
-num = int(input("Enter the number:"))
-for i in range(num+1):
-                                        
-     for j in range(i):
-        print("*",end="")
 
-     print("") 
-
-#task2
 num = int(input("Enter the number:"))
+
+print("1.")
 for i in range(num,0,-1):
-    for j in range(i):
-        print("*",end="")
-    print("") 
-
-#task3
-num = int(input("Enter the number:"))
-for i in range(num,0,-1):
-    print(" "*(num-i),end="")
-    for j in range(i):
-        print("*",end="")
+    print("  "*(num-i),"* "*i,end=" ")
     print("")
 
-#task4
-num = int(input("Enter the number:"))
-for i in range(1,num+1):
-    print(" "*(num-i),end="")
-    for j in range(i):
+print("2.")
+for i in range(num,0,-1):
+    print(" "*(num-i),"* "*i,end="")
+    print("")
     
-        print("*",end="")
-        # print(""*(num-i),end="") 
-    print("")    
+print("3.")
+for i in range(1,num+1):
+    print("  "*(num-i),"* "*i,end="")
+    print("")
 
-num = int(input("Enter the number:"))
-for i in range(num,1,-1):
-    for j in range(i):
-        print(" "*(num-1),"*",end="")
-    print("")         
+print("4.")
+for i in range(1,num+1):
+    print(" "*(num-i),"* "*i,end="")
+    print("")
 
+print("5.")
+for i in range(1,num+1):
+    print(" "*(num-i),"* "*i,end="")
+    print("")
+for i in range(num-1,0,-1):
+    print(" "*(num-i),"* "*i,end="")
+    print("")
