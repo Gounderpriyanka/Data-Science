@@ -68,4 +68,39 @@ print(sorted(l1))
 
 
 
-       
+# write a program to find the duplicate values 
+# t = (10,20,30,10,40,50,20)
+# output(10,20)
+
+# find the second largest number in a tuple
+# t = (12,45,78,23,90,56)
+# output : 78
+
+
+n = int(input("Enter the number:"))
+l1 = []
+for i in range(n):
+     a = int(input("Enter the number:"))
+     l1.append(a)
+t1 = tuple(l1)
+
+print(t1)
+t2 = []
+
+for i in l1:
+     a = t1.count(i)
+     if a>1 and i not in t2:
+          t2.append(i)
+          
+print(t2)
+
+'''n = int(input("Enter the number:"))
+l1 = []
+for i in range (n):
+    a = int(input("Enter the number:"))
+    l1.append(a)
+t1 = tuple(l1)
+sorted_num = sorted(l1)
+t1 = tuple(l1)
+print(t1)
+print(t1[-2])'''
