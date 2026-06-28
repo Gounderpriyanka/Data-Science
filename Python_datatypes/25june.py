@@ -27,17 +27,17 @@ output : first "o" index number is 6.
          Third "o" index number is 14.
          fourth "o" index number is 
          """
-s1 = "i am going to goa next month"
+'''s1 = "i am going to goa next month"
 for i in range (len(s1)):
     if s1[i] == "o":
-        print("index:",i)
+        print("index:",i)'''
 
 
 # task : 2 replace second 'r' with  '#'
 '''input  : restart
 output  :resta#t'''
 
-s1 = "restart"
+'''s1 = "restart"
 count = 0
 result = ""
 
@@ -49,12 +49,10 @@ for i in s1:
             continue
     result += i
 
-print(result)  # resta#t
+print(result)'''  # resta#t
 
 # task :3 ask user to enter the string and replace first space and  last space with underscore.(_)
 
 # input : i am going to goa next month.
 # output : i_am goint to goa next_month.
-s1 = "i am going to goa next month."
-count = 0
-if 
+
