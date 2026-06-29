@@ -87,3 +87,5 @@ for i in l1:
         odd.append(i)
 print(even)
 print(odd)
+
+all()

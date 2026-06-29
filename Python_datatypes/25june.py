@@ -56,3 +56,11 @@ print(result)'''  # resta#t
 # input : i am going to goa next month.
 # output : i_am goint to goa next_month.
 
+
+c1 = "a"
+c2 = "Z"
+ 
+s = ""
+for i in range(ord(c1),ord(c2)+1):
+    print(s = s + chr(i) + " ")
+        

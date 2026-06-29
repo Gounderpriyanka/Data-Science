@@ -1,12 +1,19 @@
 LIST - THEORY QUESTIONS
 
 1. What is a list in Python?
+Ans : A list is used to store many values in one variable.
 2. What are the characteristics of a list?
+Ans : Keeps items in order,can be changed,allows duplicates,can use different datatypes,uses index number.
 3. What is the difference between a list and a tuple?
+Ans : Can be changed and uses [], Cannot be changed and uses ()
 4. Why are lists mutable?
+Ans : Lists are mutable because we can add,remove,or change their items.
 5. What built-in functions can be used with lists?
+Ans : len(),max(),min(),sum(),sorted(),list(),any(),all()
 6. What is the difference between append() and extend()?
+Ans : Append() means add one items and Extend means add many items.
 7. What is the difference between remove() and pop()?
+Ans : 
 8. How does list slicing work in Python?
 9. What is nested list?
 10. What is list comprehension?

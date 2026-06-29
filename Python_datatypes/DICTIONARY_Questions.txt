@@ -1,6 +1,7 @@
 DICTIONARY - THEORY QUESTIONS
 
 1. What is a dictionary in Python?
+Ans : 
 2. What are the characteristics of a dictionary?
 3. What is a key-value pair?
 4. Can dictionary keys be duplicated?
