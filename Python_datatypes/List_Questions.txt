@@ -13,10 +13,15 @@ Ans : len(),max(),min(),sum(),sorted(),list(),any(),all()
 6. What is the difference between append() and extend()?
 Ans : Append() means add one items and Extend means add many items.
 7. What is the difference between remove() and pop()?
-Ans : 
+Ans : Remove() will delete an item by value and Pop will delete an item with index number.
 8. How does list slicing work in Python?
+Ans : Slicing is used to get a part of a list.
 9. What is nested list?
+Ans : it is a list inside another list.
 10. What is list comprehension?
+Ans : List comprehension is a short way to create a list.
+      Eg. l1 = [x for x in range(5)]
+          print(l1)
 
 LIST - PRACTICAL QUESTIONS
 
@@ -39,6 +44,7 @@ LIST - PRACTICAL QUESTIONS
 LIST - INTERVIEW QUESTIONS
 
 1. Is a list mutable or immutable?
+Ans : 
 2. Which methods are available in lists?
 3. Can a list contain different data types?
 4. What is the difference between append() and insert()?
