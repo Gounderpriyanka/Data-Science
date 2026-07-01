@@ -44,8 +44,9 @@ LIST - PRACTICAL QUESTIONS
 LIST - INTERVIEW QUESTIONS
 
 1. Is a list mutable or immutable?
-Ans : 
+Ans : is mutable, so it elements can be changed
 2. Which methods are available in lists?
+Ans : append(),insert,remove(),pop(),clear(),index(),
 3. Can a list contain different data types?
 4. What is the difference between append() and insert()?
 5. What is the difference between remove(), pop(), and del?
