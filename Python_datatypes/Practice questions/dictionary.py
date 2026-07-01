@@ -17,7 +17,10 @@ print(d1)'''
 
 # Q.15 Sort a dictionary by keys.
 d1 = {'abc': 23, 'cdv': 56, 'gsd': 78, 'dsd': 53}
-sorted_dic ={}
+sorted_dic1 = {sorted(d1)}
+sorted_dic = {}
 for i in sorted(d1):
     sorted_dic[i] = d1[i]
 print(sorted_dic)
+print(sorted_dic1)
+
