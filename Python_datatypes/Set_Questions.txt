@@ -1,7 +1,10 @@
 SET - THEORY QUESTIONS
 
 1. What is a set in Python?
+Ans : unordered collection of unique element.
 2. What are the characteristics of a set?
+Ans : unordered,mutable,unindexed,and do not allow duplicate 
+and also not allow the list and dictionary.
 3. Why are duplicate values not allowed in a set?
 4. Is a set ordered or unordered?
 5. What built-in functions can be used with sets?
