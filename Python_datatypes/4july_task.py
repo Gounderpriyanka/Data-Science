@@ -19,15 +19,38 @@ input :- t = [('John', 90), ('Tom', 80), ('Anna', 85), ('Peter', 75), ('Sara', 6
 output :- t = [('Sara', 60), ('Peter', 75), ('Tom', 80), ('Anna', 85), ('John', 90)]
 """
 
-word = input("Enter the sentences:")
-No_of_letters = len(word)
-n = word.split(sep=" ")
-print("No of letters:",No_of_letters)
-print("No of words:",len(n))
-count = int(0)
-for i in range(len(n)):
+# word = input("Enter the sentences:")
+# No_of_letters = len(word)
+# longest_word = ""
+# n = word.split(sep=" ")
+# count = 0
+# for i in range(len(n)):
+#     if len(n[i]) > count:
+#         count = len(n[i])
+#         longest_word = n[i]
+# print("No of letters:",No_of_letters)
+# print("No of words:",len(n))
+# print("Longest word:",longest_word)
 
-    if len(n[i]) > count:
-        count = len(n[i])
-    print("Longest Word",n[i])
-      
+input = {'John':90,'Tom':80,'Anna':85,'Peter':75,'Sara':60}
+sorts_input = sorted(input.values())
+output = {}
+print(sorts_input)
+for i ,j in input:
+    output[i] = sorts_input[i]
+print(output)
+students = {'John': 90, 'Tom': 80, 'Anna': 85, 'Peter': 75, 'Sara': 60}
+
+sorted_students = {}
+
+# Sort the marks
+sorted_marks = sorted(students.values())
+
+# Create a new dictionary in ascending order of marks
+for mark in sorted_marks:
+    for name in students:
+        if students[name] == mark and name not in sorted_students:
+            sorted_students[name] = mark
+            break
+
+print(sorted_students)
