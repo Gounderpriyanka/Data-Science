@@ -17,4 +17,7 @@ r2 = lambda a,b,c : sorted([a,b,c])
 print(r2(45,89,63))'''
 
 #
+a = lambda x : len(x)
+print(a("abcd"))
+
 
