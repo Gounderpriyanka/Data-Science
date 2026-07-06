@@ -8,12 +8,6 @@ Output:-No of Words=5
 	    No of letters=26(including whitespace)
 	    Longest Word=program
 
-2.Ask user to give name and marks of 5 different students. Store them in dictionary.
- Sort the above dictionary in ascending order of Marks.
- 
- input : {'John':90,'Tom':80,'Anna':85,'Peter':75,'Sara':60}
- output :{'Sara' :60,'Peter':75,'Tom':80,'Anna':85,'John':90}
-
 3. sort tuple  by second element of tuple. 
 input :- t = [('John', 90), ('Tom', 80), ('Anna', 85), ('Peter', 75), ('Sara', 60)]
 output :- t = [('Sara', 60), ('Peter', 75), ('Tom', 80), ('Anna', 85), ('John', 90)]
@@ -32,25 +26,23 @@ output :- t = [('Sara', 60), ('Peter', 75), ('Tom', 80), ('Anna', 85), ('John', 
 # print("No of words:",len(n))
 # print("Longest word:",longest_word)
 
-input = {'John':90,'Tom':80,'Anna':85,'Peter':75,'Sara':60}
-sorts_input = sorted(input.values())
-output = {}
-print(sorts_input)
-for i ,j in input:
-    output[i] = sorts_input[i]
-print(output)
-students = {'John': 90, 'Tom': 80, 'Anna': 85, 'Peter': 75, 'Sara': 60}
 
+"""2.Ask user to give name and marks of 5 different students. Store them in dictionary.
+ Sort the above dictionary in ascending order of Marks.
+ 
+ input : {'John':90,'Tom':80,'Anna':85,'Peter':75,'Sara':60}
+ output :{'Sara' :60,'Peter':75,'Tom':80,'Anna':85,'John':90}"""
+
+students = {'John':90,'Tom':80,'Anna':85,'Peter':75,'Sara':60}
+# Sort the marks
+sorted_marks = sorted(students.values()) # 60,75,80,85,90
 sorted_students = {}
 
-# Sort the marks
-sorted_marks = sorted(students.values())
-
 # Create a new dictionary in ascending order of marks
-for mark in sorted_marks:
-    for name in students:
-        if students[name] == mark and name not in sorted_students:
-            sorted_students[name] = mark
+for i in sorted_marks:
+    for j in students:
+        if students[j] == i and j not in sorted_students:
+            sorted_students[j] = i
             break
 
 print(sorted_students)
