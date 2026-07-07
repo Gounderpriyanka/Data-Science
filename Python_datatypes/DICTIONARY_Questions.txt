@@ -1,8 +1,11 @@
 DICTIONARY - THEORY QUESTIONS
 
 1. What is a dictionary in Python?
-Ans : 
+Ans : mutable collection of a key-value pairs enclosed in {}
 2. What are the characteristics of a dictionary?
+Ans : Mutable, unorderd, keys are uni
+
+
 3. What is a key-value pair?
 4. Can dictionary keys be duplicated?
 5. Why are dictionary keys immutable?
