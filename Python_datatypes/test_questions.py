@@ -46,3 +46,27 @@ for i in sorted_marks:
             break
 
 print(sorted_students)
+
+
+"""
+2.Ask user to give name and marks of 5 different students. Store them in dictionary.
+ Sort the above dictionary in ascending order of Marks.
+
+"""
+
+"""d1={}
+for i in range(3):
+    name=input("enter name : ")
+    marks=int(input("enter marks : "))
+    d1[name]=marks
+
+print(d1)
+sorted_marks = sorted(d1.values())  # [67 78 90 ]
+
+d2={}
+for val in sorted_marks:   # 67  78 
+    for name, marks in d1.items():  # {'riya': 90, 'soniya': 67, 'prachi': 78}
+        if val ==marks:    # 67 == 67
+            d2.update({name:marks})  # soniya 67 
+print(d2)
+"""
