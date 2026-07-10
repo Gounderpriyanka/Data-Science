@@ -72,7 +72,16 @@ def login():
         print("username is not valid") 
         
 def deposit():
-    print("deposit")
+    username =input("enter username : ")
+    password =input("enter password : ")
+    if username in account:
+        if account[username]==password:
+            amount = int(input("Enter your amount:"))
+        else:
+            print("Invalid password")
+    else:
+        print("Username doesn't exists")
+
     
 def withdraw():
     print("withdraw")
