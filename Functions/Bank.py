@@ -17,7 +17,7 @@ bank app  :
 """
 
 account ={}
-logged_user = False
+user = ""
 
 
 
@@ -51,6 +51,7 @@ def create_password(password):
         return False
 
 def create_account():
+    global user
     
     print("----------create account ----------")
     
@@ -59,12 +60,14 @@ def create_account():
     
     if  create_password(password) :
         account[username]=password
+        user = username
+
         print("account created successfully")
     else :
         print("password is not valid")
         
 def login():
-    global logged_user = True
+    
     username =input("enter username : ")
     password =input("enter password : ")
     
@@ -78,20 +81,44 @@ def login():
         print("username is not valid") 
         
 def deposit():
-    global logged_user
-
-    if logged_user is False:
+   global user
+   if user == "":
         print("Please login first.")
+   else: 
+        amount = int(input("Enter your amount:"))
+        if amount>0:
+            print("Amount should be positive!")
+        else:
+            account[user]['balance']+=amount
+            print("depost success")
+       
 
-    deposit = int(input("Enter your amount"))
-    account["amount"] = [deposit]        
+                  
 
     
 def withdraw():
-    print("withdraw")
+    global user
+    if user == "":
+        print("Please login first.")
+
+    amount =int(input("enter amount : "))  
+    if amount<0 :
+        print("amount should be positive")
+    else :
+        if user in account :
+            if account[user]['balance']>=amount :
+                account[user]['balance']-=amount
+                print("withdraw success")
+        else :
+            print("username is not valid")
 
 def check_balance():
-    print("check balance")
+    global user
+
+    if user == "":
+        print("Please login first.")
+    else:
+        print("your  final balance is  : ",account[user]['balance']) 
     
 def main():
     while True :
