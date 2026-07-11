@@ -17,6 +17,11 @@ bank app  :
 """
 
 account ={}
+logged_user = False
+
+
+
+
 
 def create_password(password):
     
@@ -59,6 +64,7 @@ def create_account():
         print("password is not valid")
         
 def login():
+    global logged_user = True
     username =input("enter username : ")
     password =input("enter password : ")
     
@@ -72,15 +78,13 @@ def login():
         print("username is not valid") 
         
 def deposit():
-    username =input("enter username : ")
-    password =input("enter password : ")
-    if username in account:
-        if account[username]==password:
-            amount = int(input("Enter your amount:"))
-        else:
-            print("Invalid password")
-    else:
-        print("Username doesn't exists")
+    global logged_user
+
+    if logged_user is False:
+        print("Please login first.")
+
+    deposit = int(input("Enter your amount"))
+    account["amount"] = [deposit]        
 
     
 def withdraw():
@@ -107,8 +111,10 @@ def main():
                 deposit()
             case 4 :
                 withdraw()
+                
             case 5 :
                 check_balance()
+                
             case 6 :
                 break
                 
