@@ -72,9 +72,9 @@ def login():
     password =input("enter password : ")
     
     if username in account :
-        if account[username]==password :
-            print("login success")
-            # account[username]=25000 
+        if account[username]["password"] == password:
+            user = username
+            print("Login Success") 
         else: 
             print("password is not valid")
     else :
@@ -86,7 +86,7 @@ def deposit():
         print("Please login first.")
    else: 
         amount = int(input("Enter your amount:"))
-        if amount>0:
+        if amount<0:
             print("Amount should be positive!")
         else:
             account[user]['balance']+=amount
@@ -127,7 +127,8 @@ def main():
         print("3. deposit")
         print("4. withdraw")
         print("5. check balance")
-        print("6. exit")
+        print("6")
+        print("7. exit")
         choice =int(input("enter choice : "))
         match choice :
             case 1 :
@@ -141,8 +142,11 @@ def main():
                 
             case 5 :
                 check_balance()
+            case 6 : 
+                print(account)
                 
-            case 6 :
+            case 7 :
                 break
-                
+
+              
 main()
