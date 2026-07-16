@@ -126,7 +126,7 @@ l2 = [1,2,3,3,3,3,4,5]
 ditt(l2)'''
 
 
-# 9. Check Whether a Number is Prime
+'''# 9. Check Whether a Number is Prime
 # Write a Python function that takes a number as a parameter and checks whether the 
 # number is prime or not. Mathematics
 # Note : A prime number (or a prime) is a natural number greater than 1 and that has
@@ -145,6 +145,19 @@ def prime(a):
     else:
             print("The number is prime:",a)
 
-prime(1)
+prime(1)'''
 
 
+# 10. Print Even Numbers from a Given List
+# Write a Python program to print the even numbers from a given list.
+# Sample List : [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# Expected Result : [2, 4, 6, 8]
+
+l1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+l2 = []
+def num(a):
+    for i in a:
+        if i%2==0:
+            l2.append(i)
+    print(l2)
+num(l1)
