@@ -162,7 +162,7 @@ def num(a):
     print(l2)
 num(l1)'''
 
-'''# 11. Check if a Number is Perfect
+# 11. Check if a Number is Perfect
 # Write a Python function to check whether a number is "Perfect" or not. Scripting Languages
 
 n = int(input("Enter a number:"))
@@ -180,7 +180,7 @@ def num(a):
         print(a,"is not a perfect number")
     print(l1)
 
-num(n)'''
+num(n)
 
 '''# 12. Check if a String is a Palindrome
 # Write a Python function that checks whether a passed string is a palindrome or not.
@@ -196,7 +196,7 @@ st = "mom"
 num(st)'''
 
 
-# 13. Check if a String is a Pangram
+'''# 13. Check if a String is a Pangram
 # Write a Python function to check whether a string is a pangram or not.
 # Note : Pangrams are words or sentences containing every letter of the alphabet at least once.
 
@@ -214,4 +214,4 @@ def word(a):
 
 word(a)
 word(b)
-
+'''
