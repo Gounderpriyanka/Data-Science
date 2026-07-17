@@ -148,7 +148,7 @@ def prime(a):
 prime(1)'''
 
 
-# 10. Print Even Numbers from a Given List
+'''# 10. Print Even Numbers from a Given List
 # Write a Python program to print the even numbers from a given list.
 # Sample List : [1, 2, 3, 4, 5, 6, 7, 8, 9]
 # Expected Result : [2, 4, 6, 8]
@@ -160,4 +160,58 @@ def num(a):
         if i%2==0:
             l2.append(i)
     print(l2)
-num(l1)
+num(l1)'''
+
+'''# 11. Check if a Number is Perfect
+# Write a Python function to check whether a number is "Perfect" or not. Scripting Languages
+
+n = int(input("Enter a number:"))
+
+def num(a):
+    l1 = []
+    for i in range(1,a+1):
+        if a%i == 0:
+            l1.append(i)
+    l1.pop()
+    summ = sum(l1)
+    if summ == a:
+        print(a,"is a Perfect number!")
+    else:
+        print(a,"is not a perfect number")
+    print(l1)
+
+num(n)'''
+
+'''# 12. Check if a String is a Palindrome
+# Write a Python function that checks whether a passed string is a palindrome or not.
+
+
+def num(a):
+    rev = a[::-1]
+    if rev == a:
+        print("its palindrome")
+    else:
+        print("its not palindrome")        
+st = "mom"
+num(st)'''
+
+
+# 13. Check if a String is a Pangram
+# Write a Python function to check whether a string is a pangram or not.
+# Note : Pangrams are words or sentences containing every letter of the alphabet at least once.
+
+a = "The quick brown fox jumps over the lazy dog"
+b = "python programming"
+
+def word(a):
+    a1 = a.lower()
+    b = "abcdefghijklmnopqrstuvwxyz"
+    for i in b:
+        if i not in a1:
+            print("not pangram")
+            return
+    print("pangram")
+
+word(a)
+word(b)
+
