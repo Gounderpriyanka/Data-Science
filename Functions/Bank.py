@@ -19,10 +19,6 @@ bank app  :
 account ={}
 user = ""
 
-
-
-
-
 def create_password(password):
     
     if len(password)>=8 :
