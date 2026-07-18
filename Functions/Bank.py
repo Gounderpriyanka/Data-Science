@@ -59,14 +59,18 @@ def create_account():
     password =input("enter password : ")
     
     if  create_password(password) :
-        account[username]=password
-        user = username
+        account[username] = {
+            
+            "password" : password,
+            "balance" : 25000
+        }
 
         print("account created successfully")
     else :
         print("password is not valid")
         
 def login():
+    global user
     
     username =input("enter username : ")
     password =input("enter password : ")
