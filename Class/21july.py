@@ -17,7 +17,7 @@ class bank :
         num = int(input("Enter the pin: "))
         if self.pin == num:
             amt = int(input("Enter the withdraw amount: "))
-            if self.balance -amt >=10000 :  # 30000 - 22000 >=10000 
+            if self.balance -amt >=10000 :  
                 self.balance -=amt
                 print("withdrawed successfully")
             else :
